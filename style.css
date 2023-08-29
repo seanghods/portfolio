@@ -50,7 +50,6 @@ header img {
 
 .portfolio {
   flex: 1;
-  border: 2px solid lightgray;
   box-shadow: 0px 5px 5px lightgrey, 0px -5px 5px lightgrey;
   
 }
@@ -62,7 +61,7 @@ h3 {
 
 .card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
   margin: 15px;
 }
