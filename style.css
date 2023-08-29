@@ -17,10 +17,9 @@ header {
   justify-content: center;
   height: 10%;
   margin: 25px;
-  
 }
 
-header img {
+header img, footer img {
   width: 250px;
   height: 250px;
 }
@@ -118,4 +117,39 @@ a:hover {
 
 .card:hover {
   transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  margin: 25px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  padding: 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px pink;
+}
+
+.email {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .email {
+    font-size: 10px;
+  }
 }
