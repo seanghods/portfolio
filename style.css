@@ -72,6 +72,7 @@ h3 {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 15px;
   transition: 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  background-color: white;
 }
 
 .card-text {
@@ -152,4 +153,8 @@ h4 {
   .email {
     font-size: 10px;
   }
+}
+
+.contact, .about {
+  background-color: white;
 }
