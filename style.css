@@ -4,6 +4,7 @@ body {
   font-family: 'Playfair Display', serif;
   background-image: url('./images/3d-background-with-white-cubes.jpg');
   background-size: cover;
+  line-height: 25px;
 }
 
 .container{
@@ -22,6 +23,8 @@ header {
 header img, footer img {
   width: 250px;
   height: 250px;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .about {
@@ -143,18 +146,27 @@ h4 {
   font-weight: bold;
   font-size: 18px;
   text-shadow: 1px 1px 2px pink;
+  margin-bottom: 10px;
 }
 
 .email {
   text-align: center;
 }
 
+.contact, .about {
+  background-color: white;
+  width: 500px;
+}
+
 @media (max-width: 600px) {
   .email {
     font-size: 10px;
   }
-}
-
-.contact, .about {
-  background-color: white;
+  header, footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about, .contact {
+    width: 320px;
+  }
 }
