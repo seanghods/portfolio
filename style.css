@@ -1,13 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Playfair Display', serif;
-  background-image: url('./images/3d-background-with-white-cubes.jpg');
+  font-family: "Playfair Display", serif;
+  background-image: url("./images/3d-background-with-white-cubes.jpg");
   background-size: cover;
   line-height: 25px;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -20,11 +20,14 @@ header {
   margin: 25px;
 }
 
-header img, footer img {
+header img,
+footer img {
   width: 250px;
   height: 250px;
   border: 1px solid black;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .about {
@@ -32,7 +35,9 @@ header img, footer img {
   flex-direction: column;
   border: 1px solid grey;
   padding: 0px 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .about-text {
@@ -53,7 +58,6 @@ header img, footer img {
 .portfolio {
   flex: 1;
   box-shadow: 0px 5px 5px lightgrey, 0px -5px 5px lightgrey;
-  
 }
 
 h3 {
@@ -66,13 +70,17 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
   margin: 15px;
+  height: 100%;
 }
 
 .card {
-  width: 300px;
+  width: 800px;
+  height: 500px;
   margin: 10px;
   border: 1px solid lightgrey;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 15px;
   transition: 0.25s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   background-color: white;
@@ -84,8 +92,7 @@ h3 {
 }
 
 .card img {
-  width: 300px;
-  height: 150px;
+  width: 800px;
   border-radius: 13px;
 }
 
@@ -105,18 +112,12 @@ footer {
   height: 25vh;
 }
 
-
 a {
   text-decoration: none;
   color: black;
   font-weight: bold;
   display: inline-block;
   transition: 0.1s ease-in;
-} 
-
-a:hover {
-  transform: scale(1.1);
-  display: inline-block;
 }
 
 .card:hover {
@@ -135,7 +136,9 @@ footer {
   flex-direction: column;
   border: 1px solid grey;
   padding: 0px 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .contact-text {
@@ -153,20 +156,30 @@ h4 {
   text-align: center;
 }
 
-.contact, .about {
+.contact,
+.about {
   background-color: white;
   width: 500px;
 }
 
 @media (max-width: 600px) {
   .email {
-    font-size: 10px;
+    font-size: 15px;
   }
-  header, footer {
+  header,
+  footer {
     flex-direction: column;
     align-items: center;
   }
-  .about, .contact {
+  .about,
+  .contact {
     width: 320px;
+  }
+  .card {
+    width: 90%;
+    height: 300px;
+  }
+  .card img {
+    width: 100%;
   }
 }
