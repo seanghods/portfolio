@@ -1,5 +1,5 @@
 import { Avatar, Button } from "react-daisyui";
-import face from "@/assets/landing/sean-face.jpeg";
+import face from "@/assets/landing/me-pic.png";
 
 export const Intro = () => {
   return (
