@@ -40,6 +40,16 @@ export const Resume = () => {
               Download Resume
             </Button>
           </div>
+          <div className="flex flex-col gap-3 items-center">
+            <i className="devicon-github-original text-[60px]" />
+            <div>View my github here:</div>
+            <a
+              className="text-gradient-light hover:brightness-110"
+              href="https://github.com/seanghods"
+            >
+              https://github.com/seanghods.
+            </a>
+          </div>
         </div>
       </div>
     </section>

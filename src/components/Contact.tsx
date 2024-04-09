@@ -29,7 +29,7 @@ export const Contact = () => {
               }
               className={`${
                 emailClicked ? "opacity-100 tooltip-open" : "opacity-100"
-              } tooltip text-gradient-light cursor-pointer transition-opacity duration-150 ease-in-out`}
+              } tooltip text-gradient-light hover:brightness-110 cursor-pointer transition-opacity duration-150 ease-in-out`}
               onClick={() => {
                 copyEmailToClipboard();
               }}

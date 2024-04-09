@@ -25,7 +25,9 @@ export const Intro = () => {
             with a mix of TypeScript, React, React Native, and Node.js.
           </p>
           <div data-aos="fade-up" className="mt-8inline-flex gap-3">
-            <Button color="primary">Learn More</Button>
+            <a href="#skills">
+              <Button color="primary">Learn More</Button>
+            </a>
           </div>
         </div>
       </div>
