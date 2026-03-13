@@ -44,12 +44,6 @@ export const Topbar = () => {
                         <a href="#skills">Skills</a>
                       </Menu.Item>
                       <Menu.Item className="font-medium">
-                        <a href="#projects">Projects</a>
-                      </Menu.Item>
-                      <Menu.Item className="font-medium">
-                        <a href="#resume">Resume</a>
-                      </Menu.Item>
-                      <Menu.Item className="font-medium">
                         <a href="#contact">contact</a>
                       </Menu.Item>
                     </Menu>
@@ -73,12 +67,6 @@ export const Topbar = () => {
                 </Menu.Item>
                 <Menu.Item className="font-medium">
                   <a href="#skills">Skills</a>
-                </Menu.Item>
-                <Menu.Item className="font-medium">
-                  <a href="#projects">Projects</a>
-                </Menu.Item>
-                <Menu.Item className="font-medium">
-                  <a href="#resume">Resume</a>
                 </Menu.Item>
                 <Menu.Item className="font-medium">
                   <a href="#contact">Contact</a>
