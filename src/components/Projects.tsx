@@ -29,7 +29,7 @@ const PROJECTS: Project[] = [
   },
   {
     name: 'LiftRight AI',
-    url: 'https://liftright-front.vercel.app',
+    url: 'https://www.liftrightai.com',
     logo: liftrightLogo,
     description:
       'Upload a video of your lift and get AI form analysis with personalized coaching cues. In-browser video processing keeps uploads fast and private.',
