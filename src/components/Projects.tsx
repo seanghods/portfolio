@@ -1,4 +1,5 @@
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Dumbbell } from 'lucide-react'
+import statpickLogo from '@/assets/projects/statpick-logo.png'
 
 type Project = {
   name: string
@@ -6,12 +7,14 @@ type Project = {
   description: string
   highlight?: string
   stack: string[]
+  logo?: string
 }
 
 const PROJECTS: Project[] = [
   {
     name: 'Stat Pick AI',
     url: 'https://www.statpick.ai',
+    logo: statpickLogo,
     description:
       'AI-powered player prop research for NBA, NFL, WNBA, and MLB. Daily AI-generated picks, per-prop analysis and chat, live odds, and a fully graded public track record — on web and iOS.',
     highlight: '8,500+ users · 30,000+ AI analyses generated',
@@ -48,9 +51,22 @@ export function Projects() {
             className='group flex flex-col gap-3 rounded-xl border border-zinc-800/80 bg-zinc-900/40 p-5 transition-colors duration-150 hover:border-zinc-700 hover:bg-zinc-900/70'
           >
             <div className='flex items-center justify-between'>
-              <span className='text-lg font-semibold text-zinc-100'>
-                {project.name}
-              </span>
+              <div className='flex items-center gap-3'>
+                {project.logo ? (
+                  <img
+                    src={project.logo}
+                    alt={`${project.name} logo`}
+                    className='h-10 w-10 rounded-full border border-zinc-800'
+                  />
+                ) : (
+                  <span className='flex h-10 w-10 items-center justify-center rounded-full border border-zinc-800 bg-emerald-500/10'>
+                    <Dumbbell size={20} className='text-emerald-400' />
+                  </span>
+                )}
+                <span className='text-lg font-semibold text-zinc-100'>
+                  {project.name}
+                </span>
+              </div>
               <ArrowUpRight
                 size={18}
                 className='text-zinc-600 transition-colors duration-150 group-hover:text-emerald-400'
