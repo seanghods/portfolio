@@ -1,3 +1,5 @@
+import { inlineLink } from '@/styles.ts'
+
 export function Footer() {
   return (
     <footer className='flex flex-col gap-2 border-t border-zinc-900 pt-8'>
@@ -5,7 +7,7 @@ export function Footer() {
         Reach me at{' '}
         <a
           href='mailto:seanxghods@gmail.com'
-          className='text-zinc-300 underline decoration-zinc-700 underline-offset-4 transition-colors duration-150 hover:decoration-emerald-400'
+          className={`${inlineLink} text-sm`}
         >
           seanxghods@gmail.com
         </a>{' '}

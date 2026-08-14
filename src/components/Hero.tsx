@@ -1,5 +1,6 @@
 import { Github, Linkedin } from 'lucide-react'
 import face from '@/assets/landing/me-pic.png'
+import { inlineLink, pillButton } from '@/styles.ts'
 import { CopyEmailButton } from './CopyEmailButton.tsx'
 
 export function Hero() {
@@ -25,17 +26,17 @@ export function Hero() {
           href='https://x.build'
           target='_blank'
           rel='noreferrer'
-          className='font-medium text-zinc-200 underline decoration-zinc-700 underline-offset-4 transition-colors duration-150 hover:decoration-emerald-400'
+          className={inlineLink}
         >
           XBuild
         </a>
-        , a platform bringing AI to construction estimating. On
-        the side I ship my own products — most notably{' '}
+        , a platform bringing AI to construction estimating. On the side I ship
+        my own products — most notably{' '}
         <a
           href='https://www.statpick.ai'
           target='_blank'
           rel='noreferrer'
-          className='font-medium text-zinc-200 underline decoration-zinc-700 underline-offset-4 transition-colors duration-150 hover:decoration-emerald-400'
+          className={inlineLink}
         >
           Stat Pick AI
         </a>
@@ -46,7 +47,7 @@ export function Hero() {
           href='https://github.com/seanghods'
           target='_blank'
           rel='noreferrer'
-          className='flex items-center gap-2 rounded-lg border border-zinc-800 px-3 py-2 text-sm font-medium text-zinc-300 transition-colors duration-150 hover:border-zinc-700 hover:text-zinc-100'
+          className={pillButton}
         >
           <Github size={16} />
           GitHub
@@ -55,7 +56,7 @@ export function Hero() {
           href='https://www.linkedin.com/in/sean-ghods-577b3045/'
           target='_blank'
           rel='noreferrer'
-          className='flex items-center gap-2 rounded-lg border border-zinc-800 px-3 py-2 text-sm font-medium text-zinc-300 transition-colors duration-150 hover:border-zinc-700 hover:text-zinc-100'
+          className={pillButton}
         >
           <Linkedin size={16} />
           LinkedIn

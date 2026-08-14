@@ -1,3 +1,5 @@
+import { inlineLink } from '@/styles.ts'
+
 type Role = {
   company: string
   url?: string
@@ -36,7 +38,7 @@ export function Experience() {
                   href={role.url}
                   target='_blank'
                   rel='noreferrer'
-                  className='font-semibold text-zinc-100 underline decoration-zinc-800 underline-offset-4 transition-colors duration-150 hover:decoration-emerald-400'
+                  className={`${inlineLink} font-semibold text-zinc-100`}
                 >
                   {role.company}
                 </a>
