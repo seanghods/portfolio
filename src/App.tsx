@@ -1,20 +1,17 @@
-import { Intro } from "./components/Intro.tsx";
-import { Topbar } from "@/components/Topbar.tsx";
-import { Theme } from "react-daisyui";
-import { Skills } from "./components/Skills.tsx";
-import { Contact } from "./components/Contact.tsx";
+import { Hero } from './components/Hero.tsx'
+import { Projects } from './components/Projects.tsx'
+import { Experience } from './components/Experience.tsx'
+import { Footer } from './components/Footer.tsx'
 
 function App() {
   return (
-    <>
-      <Theme dataTheme={"dark"}>
-        <Topbar />
-        <Intro />
-        <Skills />
-        <Contact />
-      </Theme>
-    </>
-  );
+    <main className='mx-auto flex max-w-2xl flex-col gap-16 px-6 py-16 lg:py-24'>
+      <Hero />
+      <Projects />
+      <Experience />
+      <Footer />
+    </main>
+  )
 }
 
-export default App;
+export default App
