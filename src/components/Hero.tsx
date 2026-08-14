@@ -19,7 +19,7 @@ export function Hero() {
         </p>
       </div>
       <p className='leading-relaxed text-zinc-400'>
-        I build web and mobile products end to end. Currently a software
+        I build web and mobile products end to end. Currently a senior software
         engineer at{' '}
         <a
           href='https://x.build'
@@ -29,7 +29,7 @@ export function Hero() {
         >
           XBuild
         </a>
-        , an a16z-backed platform bringing AI to construction estimating. On
+        , a platform bringing AI to construction estimating. On
         the side I ship my own products — most notably{' '}
         <a
           href='https://www.statpick.ai'
@@ -52,7 +52,7 @@ export function Hero() {
           GitHub
         </a>
         <a
-          href='https://www.linkedin.com/in/seanghods'
+          href='https://www.linkedin.com/in/sean-ghods-577b3045/'
           target='_blank'
           rel='noreferrer'
           className='flex items-center gap-2 rounded-lg border border-zinc-800 px-3 py-2 text-sm font-medium text-zinc-300 transition-colors duration-150 hover:border-zinc-700 hover:text-zinc-100'

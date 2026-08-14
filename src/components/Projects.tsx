@@ -1,5 +1,6 @@
-import { ArrowUpRight, Dumbbell } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import statpickLogo from '@/assets/projects/statpick-logo.png'
+import liftrightLogo from '@/assets/projects/liftright-logo.png'
 
 type Project = {
   name: string
@@ -7,7 +8,7 @@ type Project = {
   description: string
   highlight?: string
   stack: string[]
-  logo?: string
+  logo: string
 }
 
 const PROJECTS: Project[] = [
@@ -29,6 +30,7 @@ const PROJECTS: Project[] = [
   {
     name: 'LiftRight AI',
     url: 'https://liftright-front.vercel.app',
+    logo: liftrightLogo,
     description:
       'Upload a video of your lift and get AI form analysis with personalized coaching cues. In-browser video processing keeps uploads fast and private.',
     stack: ['React', 'Node.js', 'FFmpeg (WASM)', 'Stripe'],
@@ -52,17 +54,11 @@ export function Projects() {
           >
             <div className='flex items-center justify-between'>
               <div className='flex items-center gap-3'>
-                {project.logo ? (
-                  <img
-                    src={project.logo}
-                    alt={`${project.name} logo`}
-                    className='h-10 w-10 rounded-full border border-zinc-800'
-                  />
-                ) : (
-                  <span className='flex h-10 w-10 items-center justify-center rounded-full border border-zinc-800 bg-emerald-500/10'>
-                    <Dumbbell size={20} className='text-emerald-400' />
-                  </span>
-                )}
+                <img
+                  src={project.logo}
+                  alt={`${project.name} logo`}
+                  className='h-10 w-10 rounded-full border border-zinc-800 object-cover'
+                />
                 <span className='text-lg font-semibold text-zinc-100'>
                   {project.name}
                 </span>

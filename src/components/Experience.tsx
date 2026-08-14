@@ -9,13 +9,13 @@ const ROLES: Role[] = [
   {
     company: 'XBuild',
     url: 'https://x.build',
-    title: 'Software Engineer',
+    title: 'Senior Software Engineer',
     description:
-      'AI-native software platform for construction contractors — estimating, proposals, and CRM. Backed by a16z.',
+      'AI-native software platform for construction contractors — estimating, proposals, and CRM.',
   },
   {
     company: 'Lightstrike Labs',
-    title: 'Founder / Engineer',
+    title: 'Software Engineer',
     description:
       'Agency building web and native mobile apps for clients, from design through app store launch.',
   },
