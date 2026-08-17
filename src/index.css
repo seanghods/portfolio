@@ -7,3 +7,39 @@
 ::selection {
   background-color: rgb(52 211 153 / 0.25);
 }
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* The page arrives as one piece — nothing assembles itself in front of you.
+   Only what starts below the fold animates, and only as you reach it. */
+@media (prefers-reduced-motion: no-preference) {
+  .page-in {
+    animation: page-in 300ms ease-out both;
+  }
+
+  .reveal {
+    opacity: 0;
+  }
+
+  .reveal[data-shown='true'] {
+    animation: reveal-up 420ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}

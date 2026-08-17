@@ -4,13 +4,29 @@ export function Background() {
   const spotlightRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const onMove = (e: MouseEvent) => {
+    let frame = 0
+    let x = 0
+    let y = 0
+
+    // paint on the next frame rather than on every mousemove event
+    const paint = () => {
+      frame = 0
       const el = spotlightRef.current
       if (!el) return
-      el.style.background = `radial-gradient(520px circle at ${e.clientX}px ${e.clientY}px, rgb(52 211 153 / 0.12), transparent 70%)`
+      el.style.background = `radial-gradient(520px circle at ${x}px ${y}px, rgb(52 211 153 / 0.12), transparent 70%)`
     }
-    window.addEventListener('mousemove', onMove)
-    return () => window.removeEventListener('mousemove', onMove)
+
+    const onMove = (e: MouseEvent) => {
+      x = e.clientX
+      y = e.clientY
+      if (!frame) frame = requestAnimationFrame(paint)
+    }
+
+    window.addEventListener('mousemove', onMove, { passive: true })
+    return () => {
+      window.removeEventListener('mousemove', onMove)
+      if (frame) cancelAnimationFrame(frame)
+    }
   }, [])
 
   return (

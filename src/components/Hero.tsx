@@ -9,6 +9,8 @@ export function Hero() {
       <img
         src={face}
         alt='Sean Ghods'
+        width={160}
+        height={160}
         className='h-20 w-20 rounded-full border border-zinc-800 object-cover'
       />
       <div className='flex flex-col gap-2'>
@@ -29,8 +31,8 @@ export function Hero() {
         >
           XBuild
         </a>
-        , a platform bringing AI to construction estimating. On the side I ship
-        my own products — most notably{' '}
+        , a platform bringing AI to construction estimating. On the side I
+        ship my own products — most notably{' '}
         <a
           href='https://www.statpick.ai'
           target='_blank'

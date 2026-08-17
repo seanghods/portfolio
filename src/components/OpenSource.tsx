@@ -24,6 +24,8 @@ export function OpenSource() {
             <img
               src={claudecraftLogo}
               alt='World of Claudecraft logo'
+              width={320}
+              height={214}
               className='h-10 w-16 rounded-lg border border-zinc-800 bg-zinc-950/60 object-contain p-1'
             />
             <span className='text-lg font-semibold text-zinc-100'>

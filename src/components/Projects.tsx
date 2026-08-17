@@ -62,6 +62,8 @@ export function Projects() {
                 <img
                   src={project.logo}
                   alt={`${project.name} logo`}
+                  width={128}
+                  height={128}
                   className='h-10 w-10 rounded-full border border-zinc-800 object-cover'
                 />
                 <span className='text-lg font-semibold text-zinc-100'>
