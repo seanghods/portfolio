@@ -16,12 +16,11 @@ export function Hero() {
           Sean Ghods
         </h1>
         <p className='text-lg text-zinc-400'>
-          Full-stack engineer — TypeScript, React, React Native, Node.js.
+          Full-stack engineer building AI products for web and mobile.
         </p>
       </div>
       <p className='leading-relaxed text-zinc-400'>
-        I build web and mobile products end to end. Currently a senior software
-        engineer at{' '}
+        I&rsquo;m currently a senior software engineer at{' '}
         <a
           href='https://x.build'
           target='_blank'

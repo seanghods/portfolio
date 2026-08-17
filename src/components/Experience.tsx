@@ -17,6 +17,7 @@ const ROLES: Role[] = [
   },
   {
     company: 'Lightstrike Labs',
+    url: 'https://www.lightstrikelabs.com/',
     title: 'Software Engineer',
     description:
       'Agency building web and native mobile apps for clients, from design through app store launch.',

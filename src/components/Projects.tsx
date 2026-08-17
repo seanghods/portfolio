@@ -9,6 +9,8 @@ type Project = {
   highlight?: string
   stack: string[]
   logo: string
+  /** slightly brighter border so the flagship project stands out */
+  featured?: boolean
 }
 
 const PROJECTS: Project[] = [
@@ -16,8 +18,9 @@ const PROJECTS: Project[] = [
     name: 'Stat Pick AI',
     url: 'https://www.statpick.ai',
     logo: statpickLogo,
+    featured: true,
     description:
-      'AI-powered player prop research for NBA, NFL, WNBA, and MLB. Daily AI-generated picks, per-prop analysis and chat, live odds, and a fully graded public track record — on web and iOS.',
+      'AI-powered player prop research for NBA, NFL, WNBA, and MLB. Daily AI-generated picks, per-prop analysis and chat, live odds, and a fully graded public track record — on web, iOS, and Android.',
     highlight: '8,500+ users · 30,000+ AI analyses generated',
     stack: [
       'Next.js',
@@ -50,7 +53,9 @@ export function Projects() {
             href={project.url}
             target='_blank'
             rel='noreferrer'
-            className='group flex flex-col gap-3 rounded-xl border border-zinc-800/80 bg-zinc-900/40 p-5 transition-colors duration-150 hover:border-zinc-700 hover:bg-zinc-900/70'
+            className={`group flex flex-col gap-3 rounded-xl border bg-zinc-900/40 p-5 transition-colors duration-150 hover:border-emerald-400/70 hover:bg-zinc-900/70 hover:animate-border-glow motion-reduce:hover:animate-none ${
+              project.featured ? 'border-zinc-700' : 'border-zinc-800/80'
+            }`}
           >
             <div className='flex items-center justify-between'>
               <div className='flex items-center gap-3'>

@@ -2,7 +2,6 @@ import { Background } from './components/Background.tsx'
 import { Hero } from './components/Hero.tsx'
 import { Projects } from './components/Projects.tsx'
 import { Experience } from './components/Experience.tsx'
-import { Footer } from './components/Footer.tsx'
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
       <Hero />
       <Projects />
       <Experience />
-      <Footer />
     </main>
   )
 }
